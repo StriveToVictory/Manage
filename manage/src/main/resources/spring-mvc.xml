@@ -18,7 +18,7 @@
     </context:component-scan>
     
    <!-- 扫描 spring mvc的注解 @RequestMapping @ResponseBody -->
-     <mvc:annotation-driven />
+     <mvc:annotation-driven /> 
 
       <!-- 内容协商管理器  -->
     <!--1、首先检查路径扩展名（如my.pdf）；2、其次检查Parameter（如my?format=pdf）；3、检查Accept Header-->
@@ -44,7 +44,7 @@
 
 
     <!-- 当在web.xml 中   DispatcherServlet使用 <url-pattern>/</url-pattern> 映射时，能映射静态资源 -->
-    <mvc:default-servlet-handler />  
+    <!-- <mvc:default-servlet-handler />   -->
     <!-- 静态资源映射 -->
     <mvc:resources mapping="/static/**" location="/WEB-INF/static/"/>
    
