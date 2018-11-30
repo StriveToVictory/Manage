@@ -1,0 +1,6 @@
+web.xml 			首页配置
+jdbc.properties   	数据库连接设置	
+log4j.properies  	 日志配置修改
+spring-mvc.xml   	 静态资源结构设置
+spring-mybatis.xml	扫描mapping文件路径设置 		
+					添加前端依赖
