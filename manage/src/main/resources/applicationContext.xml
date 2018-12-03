@@ -11,11 +11,14 @@ http://www.springframework.org/schema/tx http://www.springframework.org/schema/t
 	<!-- 1.配置jdbc文件 -->
 	<bean id="propertyConfigurer"
 		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-		<property name="locations" value="classpath:jdbc.properties" />
-		<property name="locations" value="classpath:process.properties" />
-		<!-- <property name="locations"> <list> <property name="locations" value="classpath:jdbc.properties"/> 
-			<property name="locations" value="classpath:process.properties"/> </list> 
-			</property> -->
+		<!-- <property name="jdbc" value="classpath:jdbc.properties" />
+		<property name="process" value="classpath:process.properties" /> -->
+		 <property name="locations">
+		  	<list>
+		  		<value>classpath*:config/process.properties</value>
+				<!-- <property name="locations" value="classpath:process.properties"/> -->
+			 </list> 
+			</property> 
 	</bean>
 
 	<!-- 2.扫描的包路径，这里不扫描被@Controller注解的类 --><!--使用<context:component-scan/> 可以不在配置<context:annotation-config/> -->
