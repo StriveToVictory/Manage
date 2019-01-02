@@ -53,7 +53,7 @@
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
 		<!-- 自动扫描mapping.xml文件 (未配置) -->
-		<property name="mapperLocations" value="classpath:"></property>
+		<property name="mapperLocations" value=""></property>
 	</bean>
 
 
@@ -67,7 +67,7 @@
 	<!-- 配置事务管理器 -->
 	<bean id="transactionManager"
 		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-		<property name="dataSource" ref="dataSource" />
+		<property name="dataSource1" ref="dataSource" />
 	</bean>
 
 	<!--======= 事务配置 End =================== -->

@@ -15,7 +15,8 @@ http://www.springframework.org/schema/tx http://www.springframework.org/schema/t
 		<property name="process" value="classpath:process.properties" /> -->
 		 <property name="locations">
 		  	<list>
-		  		<value>classpath*:config/process.properties</value>
+		  		<value>classpath*:process.properties</value>
+		  		<value>classpath*:jdbc.properties</value>
 				<!-- <property name="locations" value="classpath:process.properties"/> -->
 			 </list> 
 			</property> 
